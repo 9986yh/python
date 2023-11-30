@@ -1,5 +1,5 @@
 import openpyxl
-
+# 定义储存变量
 B3_53 = []
 C3_53 = []
 D3_53 = []
@@ -17,6 +17,7 @@ student_name = []
 name = '23大队第十二周个人周统表.xlsx'
 wb = openpyxl.load_workbook(name)
 worksheet = wb.worksheets
+# 访问的是第11个工作表
 sheet1 = worksheet[10]
 for i in range(len(B3_53)):
     if sheet1[B3_53[i]].value is not None:
